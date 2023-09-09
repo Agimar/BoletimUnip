@@ -63,7 +63,7 @@ using System;
 					w++;
 				}
 
-				string faixa = "";
+				string faixa, situacao, aluno;
 
 				for (int y = 0; y < idade.Length; y++)
 				{
@@ -87,8 +87,6 @@ using System;
 
 				//np1 + np2 = 80%
 				//pim = 20%
-
-				string situacao, aluno;
 
 				for (int n = 0; n < cadastro; n++)
 				{
