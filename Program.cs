@@ -45,7 +45,7 @@ using System;
 					status[i] = Console.ReadLine();
 				}
 
-				LimpaTela();
+				//LimpaTela();
 
 				int w = 0;
 				while (w < nome.Length)
