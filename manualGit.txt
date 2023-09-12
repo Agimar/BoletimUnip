@@ -1,0 +1,52 @@
+wdev - https://www.youtube.com/watch?v=0m_nZ_p9idk&list=PL_zkXQGHYosGp6K7sYguznd7hhet0cxL2
+
+git config --global user.name "Agimar"
+git config --global user.email "agimar@outlook.com"
+git config --list //(listar cadastro)
+
+git status
+git add . //arquivo.* 
+git reset HEAD //(desfaz todos git add) ou (git reset arquivo.*)
+git commit -m "commit 1"
+git log
+git checkout --arquivo.* //(recupera arquivo excluido)
+
+rm -rf .git //apagar um repositório
+git clean -df //apagar novos arquivos que ainda não foram adicionados ao Stage 
+git commit --amend //Renomear Commit
+
+git checkout 40651eb8e9007b2df076abb45f51ec3bc2971845 ( volta no historico da motificação desta ID )
+
+git checkout master
+
+git branch
+git branch -a //lista as branchs que estão no repositório
+git checkout -b desenv (cria um brand novo)
+git branch -d nome-da-branch //ou -D excluir uma branch
+
+git checkout master
+git branch
+
+git merge desenv (mescra desenv na branch master)
+
+git branch -d desenv ( exclui o branch desenv)
+
+git reset --soft HEAD-1(excluit o ultimo log)
+
+git reset --hard HEAD-1( remove o ultimo arquivo do sistema)
+
+git revert 40651eb8e9007b2df076abb45f51ec3bc2971845 (reverter alteração no arquivo ultimo commit)
+
+.gitignore
+pasta/* (ignora todos os arquivos da pasta)
+arquivo.txt ( ignora o aquivo.txt) 
+!pasta/arquivo.doc (ignora todos os arquivos na pasta exceto arquivo.doc)
+*.xls (todos os arquivos xls serão ignorados)
+
+
+git remote add origin http://...   (git remote -v verificar git remote) // origin ou master
+git push -u origin --all  (-u somente pela primeira vez) //origin ou master
+
+git pull origin master ( puxa o repositorio para sua maquina)
+
+git clone url... (copia o repositorio para sua maquina)
